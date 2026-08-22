@@ -158,14 +158,13 @@ export const PLAYER_GRAVEYARD_Y = PLAYER_DECK_Y + PILE_ROW_GAP;
 // SPACING further toward screen center. A category with zero cards in play is skipped rather than
 // drawn empty, so the column never shows a gap for a category this player hasn't drawn into yet.
 // The generic marker isn't part of this column at all — see AETHER_MARKER_OFFSET_X below — so it
-// doesn't shift the elemental rows. Both spacing values are placeholder-tuned — a side with
-// several elemental categories in play simultaneously (rare) may crowd toward screen center and is
-// worth an eye check in the browser.
-export const AETHER_ROW_X_START = 100;
+// doesn't shift the elemental rows. Both spacing values are eye-tuned and confirmed in the browser,
+// including a side with several elemental categories in play simultaneously.
+export const AETHER_ROW_X_START = 50;
 export const AETHER_ROW_EDGE_CLEARANCE = 10;
 export const OPPONENT_AETHER_ROW_START_Y = DECK_PILE_H / 2 + AETHER_ROW_EDGE_CLEARANCE;
 export const PLAYER_AETHER_ROW_START_Y = GAME_HEIGHT - DECK_PILE_H / 2 - AETHER_ROW_EDGE_CLEARANCE;
-export const AETHER_ROW_SPACING = 140;
+export const AETHER_ROW_SPACING = 130;
 
 // The generic-Aether round marker (renderAetherMarker) sits beside the elemental column's row 0 —
 // same side-edge-aligned Y, offset this far to the right — rather than inside the column itself,

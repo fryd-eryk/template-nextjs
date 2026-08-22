@@ -863,8 +863,8 @@ export class CardGame extends Scene
         this.add.rectangle(CENTER_X, CENTER_Y, GAME_WIDTH, GAME_HEIGHT, 0x161b26);
 
         // Sits in the gap between the opponent's and player's Aether columns (both anchored at
-        // AETHER_ROW_X_START), vertically centered on the screen — placeholder-tuned by eye like
-        // the rest of that column's own layout constants.
+        // AETHER_ROW_X_START), vertically centered on the screen — eye-tuned and confirmed in the
+        // browser like the rest of that column's own layout constants.
         this.turnBannerText = this.add.text(AETHER_ROW_X_START, CENTER_Y, '', SMALL_STYLE).setOrigin(0, 0.5).setDepth(200);
 
         const boardZoneH = CARD_H + 30;
